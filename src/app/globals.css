@@ -1,2 +1,64 @@
 @import "tailwindcss";
 
+@theme {
+  --color-link: #D4D6D4;
+  --color-link-hover: #FFD723;
+  --color-link-active: #FFE986;
+  --color-link-visited: #FFE15A;
+
+  --color-text-primary: #4D533C;
+  --color-text-secondary: #7A888E;
+  --color-text-tertiary: #152934;
+  --color-text-footer-primary: #B6C197;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 6rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.text-paragraph {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.text-card-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.text-card {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: var(--color-text-primary);
+}
+
+.text-quote-card {
+  font-size: 1.6rem;
+  font-weight: 300;
+  font-style: italic;
+  color: var(--color-text-primary);
+}
+
+.text-section {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
