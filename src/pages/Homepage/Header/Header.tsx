@@ -11,7 +11,7 @@ import brand5 from '../../../../public/homepage/header/brand5.png';
 const Header: FunctionComponent = () => {
     return (
         <header className="relative h-[86.7vh] min-h-[80rem] ">
-            <div className="relative flex flex-col justify-center h-full bg-header">
+            <div className="relative flex flex-col justify-center h-full bg-header overflow-hidden">
                 <Navbar />
                 <div className="w-5/12 pl-[11.5%] flex flex-col justify-center items-start gap-4 px-10">
                     <p className="text-section text-white">A place where</p>
@@ -20,7 +20,7 @@ const Header: FunctionComponent = () => {
                     <CustomLink>Get in touch</CustomLink>
                 </div>
             </div>
-            <div className="absolute bottom-0 right-0 w-[88.5%] translate-y-1/2">
+            <div className="absolute bottom-0 right-0 w-[88.5%] translate-y-1/2 overflow-hidden">
                 <div className="bg-[#FBFBFB] pl-[6.5rem] pr-[6.5rem] py-[6rem] flex justify-start items-center gap-[6.6rem]">
                     <Image src={brand1} alt="brand1" />
                     <Image src={brand2} alt="brand2" />

@@ -1,0 +1,36 @@
+.burgerMenu {
+    animation-timing-function: cubic-bezier(0.5, 1, 0.89, 1);
+    animation-duration: 1000ms;
+    
+}
+
+.open {
+    animation-name: open;
+    animation-fill-mode: forwards;
+}
+
+.close {
+    animation-name: open;
+    animation-direction: reverse;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes open {
+    0% {
+        width: 40px;
+    }
+
+    30% {
+        width: 80px;
+    }
+
+    70% {
+        width: 80px;
+    }
+
+    100% {
+        height: 200px;
+        width: 80px;
+    }
+}
