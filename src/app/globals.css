@@ -34,9 +34,10 @@ body::selection {
 }
 
 .h2 {
-  font-size: 4rem;
+  font-size: 3.6rem;
   font-weight: 700;
   color: var(--color-text-primary);
+  line-height: 4.6rem;
 }
 
 .text-paragraph {

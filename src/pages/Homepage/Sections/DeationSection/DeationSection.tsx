@@ -6,11 +6,11 @@ import manImage from '../../../../../public/homepage/deation/Oval.png';
 
 const DeationSection: FunctionComponent = () => {
     return (
-        <section className="px-[11.5%]">
-            <div className="inline-flex w-[57.3%] flex-col justify-center items-start gap-4 pr-[14.4%]">
+        <section className="px-[11.5%] flex flex-row justify-between items-end">
+            <div className="inline-flex w-[57.3%] mb-[3.4rem] flex-col justify-center items-start pr-[14.4%]">
                 <p className="text-section">What we do for you</p>
-                <h2 className="h2 text-nowrap">Strategy. Design<br />Content. <span className={`${style.bg_text_h2}`}>Technology</span><br />Development </h2>
-                <p className="text-paragraph">There’s no secret sauce, no wizard behind the curtain. What makes Aerolab tick is an interdisciplinary team with a framework that fosters candid collaboration.</p>
+                <h2 className="h2 text-nowrap my-[3.2rem]">Strategy. Design<br />Content. <span className={`${style.bg_text_h2}`}>Technology</span><br />Development </h2>
+                <p className="text-paragraph mb-[4.2rem]">There’s no secret sauce, no wizard behind the curtain. What makes Aerolab tick is an interdisciplinary team with a framework that fosters candid collaboration.</p>
                 <CustomLink id="link_deation_section" href="#">More know About us</CustomLink>
             </div>
             <div className="inline-flex flex-col justify-end relative w-[42.7%] bg-white shadow-[0px_100px_100px_rgba(0,0,0,0.15)] pb-[6rem] px-[4rem] h-[64.4rem]">
