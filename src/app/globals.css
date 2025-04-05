@@ -5,17 +5,24 @@
   --color-link-hover: #FFD723;
   --color-link-active: #FFE986;
   --color-link-visited: #FFE15A;
+  --color-link-selection: #FFE573;
 
   --color-text-primary: #4D533C;
   --color-text-secondary: #7A888E;
   --color-text-tertiary: #152934;
   --color-text-footer-primary: #B6C197;
+  --color-text-selection: #DAE2C3;
+
+  --ease-out-cubic: cubic-bezier(0.33, 1, 0.68, 1);
 }
 
 html {
   font-size: 62.5%;
   font-family: 'Poppins', sans-serif;
+}
 
+body::selection {
+  background-color: var(--color-text-selection);
 }
 
 .h1 {
