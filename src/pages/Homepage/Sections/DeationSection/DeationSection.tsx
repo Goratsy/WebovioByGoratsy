@@ -6,7 +6,7 @@ import manImage from '../../../../../public/homepage/deation/Oval.png';
 
 const DeationSection: FunctionComponent = () => {
     return (
-        <section className="px-[11.5%] flex flex-row justify-between items-end">
+        <section className="px-[11.5%] flex flex-row justify-between items-end mb-[15rem]">
             <div className="inline-flex w-[57.3%] mb-[3.4rem] flex-col justify-center items-start pr-[14.4%]">
                 <p className="text-section">What we do for you</p>
                 <h2 className="h2 text-nowrap my-[3.2rem]">Strategy. Design<br />Content. <span className={`${style.bg_text_h2}`}>Technology</span><br />Development </h2>

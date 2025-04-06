@@ -16,7 +16,7 @@ const Header: FunctionComponent = () => {
                 <div className="-translate-y-6 w-5/12 pl-[11.5%] flex flex-col justify-center items-start">
                     <p className="text-section text-white mb-[2.2rem]">A place where</p>
                     <h1 className="h1 text-nowrap mb-[2.4rem]">A creative agency<br />for redemptive<br />brands</h1>
-                    <p className="text-paragraph text-white mb-[4.5rem]">Anteelo is a leading strategic design firm that builds powerful digital solutions for startups and enterprises.</p>
+                    <p className="text-paragraph mb-[4.5rem]" style={{color: "white"}}>Anteelo is a leading strategic design firm that builds powerful digital solutions for startups and enterprises.</p>
                     <CustomLink id='link_header' className="text-link-hover" href="#">Get in touch</CustomLink>
                 </div>
             </div>

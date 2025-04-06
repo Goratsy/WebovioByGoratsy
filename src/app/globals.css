@@ -8,10 +8,12 @@
   --color-link-selection: #FFE573;
 
   --color-text-primary: #4D533C;
-  --color-text-secondary: #7A888E;
+  --color-text-secondary: rgba(33, 56, 66, 0.6);
   --color-text-tertiary: #152934;
   --color-text-footer-primary: #B6C197;
   --color-text-selection: #DAE2C3;
+
+  --color-hr: rgba(33, 56, 66, 0.09);
 
   --ease-out-cubic: cubic-bezier(0.33, 1, 0.68, 1);
 }
@@ -44,6 +46,7 @@ body::selection {
   font-size: 1.6rem;
   font-weight: 300;
   line-height: 2.6rem;
+  color: var(--color-text-secondary);
 }
 
 .text-card-title {
