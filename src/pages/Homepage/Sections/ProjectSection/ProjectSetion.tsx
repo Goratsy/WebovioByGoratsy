@@ -16,7 +16,7 @@ const ProjectSection: FunctionComponent = () => {
                 <div className="w-full h-px bg-hr mx-auto"></div>
             </div>
 
-            <section className="mt-[15rem]">
+            <section className="pt-[15rem] pb-[19rem]">
                 <div className="pl-[11.5%] mb-[10.4rem] flex flex-row justify-start items-center gap-[10.6%]">
                     <h2 className="h2">We Have Some<br />Awesomr Project.</h2>
                     <p className="text-paragraph w-2/5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
@@ -26,12 +26,12 @@ const ProjectSection: FunctionComponent = () => {
                     <div className="relative w-1/2">
                         <Image src={image0} alt="image1" className="w-full"/>
                         <div className="absolute w-[45.3rem] rounded-xl bottom-0 right-0 translate-x-[4rem] translate-y-[6.5rem] bg-white shadow-[50px_50px_100px_rgba(0,0,0,0.15)] py-[3rem] px-[3rem] z-50">
-                            <p className="text-quote-card mb-[2.5rem]">“In my history of working with trade show vendors, I can honestly say that there is not one company that I've ever worked with that has better service than Exhibit Systems.”</p>
+                            <p className="text-quote mb-[2.5rem]">“In my history of working with trade show vendors, I can honestly say that there is not one company that I've ever worked with that has better service than Exhibit Systems.”</p>
                             <div className="flex justify-start items-center gap-[1.4rem]">
                                 <Image src={oval0} alt="image-quote" width={46} height={46} className="shadow-[20px_25px_43px_rgba(0,0,0,0.15)] rounded-full"/>
                                 <div>
-                                    <p className="text-card-title text-nowrap mb-[4px]">Genevieve Rodriquez</p>
-                                    <p className="text-card text-nowrap">Founder & CEO, Webovio</p>
+                                    <p className="text-quote-title text-nowrap mb-[4px]">Genevieve Rodriquez</p>
+                                    <p className="text-quote-body text-nowrap">Founder & CEO, Webovio</p>
                                 </div>
                             </div>
                         </div>
@@ -48,12 +48,12 @@ const ProjectSection: FunctionComponent = () => {
                     <div className="relative w-1/2">
                         <Image src={image1} alt="image1" className="w-full"/>
                         <div className="absolute w-[45.3rem] rounded-xl bottom-0 left-0 -translate-x-[4rem] translate-y-[6.5rem] bg-white shadow-[50px_50px_100px_rgba(0,0,0,0.15)] py-[3rem] px-[3rem] z-50">
-                            <p className="text-quote-card mb-[2.5rem]">“I know they are going to be honest with me. I am not going to get a subpar product; I know it is going to be good. That is the number one advantage of working with Exhibit Systems.</p>
+                            <p className="text-quote mb-[2.5rem]">“I know they are going to be honest with me. I am not going to get a subpar product; I know it is going to be good. That is the number one advantage of working with Exhibit Systems.</p>
                             <div className="flex justify-start items-center gap-[1.4rem]">
                                 <Image src={oval1} alt="image-quote" width={46} height={46} className="shadow-[20px_25px_43px_rgba(0,0,0,0.15)] rounded-full"/>
                                 <div>
-                                    <p className="text-card-title text-nowrap mb-[4px]">Lina Hart</p>
-                                    <p className="text-card text-nowrap">Founder & CEO, Jico</p>
+                                    <p className="text-quote-title text-nowrap mb-[4px]">Lina Hart</p>
+                                    <p className="text-quote-body text-nowrap">Founder & CEO, Jico</p>
                                 </div>
                             </div>
                         </div>
@@ -70,12 +70,12 @@ const ProjectSection: FunctionComponent = () => {
                     <div className="relative w-1/2">
                         <Image src={image2} alt="image1" className="w-full"/>
                         <div className="absolute w-[45.3rem] rounded-xl bottom-0 right-0 translate-x-[4rem] translate-y-[6.5rem] bg-white shadow-[50px_50px_100px_rgba(0,0,0,0.15)] py-[3rem] px-[3rem] z-50">
-                            <p className="text-quote-card mb-[2.5rem]">“Exhibit Systems is not a provider. They are not a supplier. They are a partner with expertise in making trade shows effective.”</p>
+                            <p className="text-quote mb-[2.5rem]">“Exhibit Systems is not a provider. They are not a supplier. They are a partner with expertise in making trade shows effective.”</p>
                             <div className="flex justify-start items-center gap-[1.4rem]">
                                 <Image src={oval2} alt="image-quote" width={46} height={46} className="shadow-[20px_25px_43px_rgba(0,0,0,0.15)] rounded-full"/>
                                 <div>
-                                    <p className="text-card-title text-nowrap mb-[4px]">Eunice Oliver</p>
-                                    <p className="text-card text-nowrap">Founder & CEO, Zeem</p>
+                                    <p className="text-quote-title text-nowrap mb-[4px]">Eunice Oliver</p>
+                                    <p className="text-quote-body text-nowrap">Founder & CEO, Zeem</p>
                                 </div>
                             </div>
                         </div>

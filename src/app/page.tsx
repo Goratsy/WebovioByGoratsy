@@ -5,9 +5,9 @@ import ServicesSection from "@/pages/Homepage/Sections/ServicesSection/ServicesS
 export default function Home() {
   return (
     <>
-      <DeationSection/>
-      <ProjectSection />
       <ServicesSection />
+      <ProjectSection />
+      <DeationSection/>
     </>
   );
 }

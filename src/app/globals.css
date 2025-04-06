@@ -49,25 +49,39 @@ body::selection {
   color: var(--color-text-secondary);
 }
 
-.text-card-title {
+.text-quote-title {
   font-family: 'Poppins', sans-serif;
   font-size: 1.6rem;
   font-weight: 700;
   color: var(--color-text-primary);
 }
 
-.text-card {
+.text-quote-body {
   font-family: 'Poppins', sans-serif;
   font-size: 1.4rem;
   font-weight: 300;
   color: var(--color-text-primary);
 }
 
-.text-quote-card {
+.text-quote {
   font-size: 1.6rem;
   font-weight: 300;
   font-style: italic;
   color: var(--color-text-primary);
+  line-height: 2.6rem;
+}
+
+.text-card-title {
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: var(--color-text-primary);
+  line-height: 3.4rem;
+}
+
+.text-card {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: var(--color-text-secondary);
   line-height: 2.6rem;
 }
 
