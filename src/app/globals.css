@@ -10,10 +10,14 @@
   --color-text-primary: #4D533C;
   --color-text-secondary: rgba(33, 56, 66, 0.6);
   --color-text-tertiary: #152934;
-  --color-text-footer-primary: #B6C197;
+  --color-text-footer: #B6C197;
   --color-text-selection: #DAE2C3;
 
   --color-hr: rgba(33, 56, 66, 0.09);
+  --color-hr-secondary: #5D6544;
+
+  --color-background-primary: #4F553D;
+  --color-background-secondary: #FBFBFB;
 
   --ease-out-cubic: cubic-bezier(0.33, 1, 0.68, 1);
 }
@@ -31,7 +35,6 @@ body::selection {
   font-family: 'Poppins', sans-serif;
   font-size: 6rem;
   font-weight: 700;
-  color: #fff;
   line-height: 7.4rem;
 }
 
@@ -59,13 +62,13 @@ body::selection {
 .text-quote-body {
   font-family: 'Poppins', sans-serif;
   font-size: 1.4rem;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--color-text-primary);
 }
 
 .text-quote {
   font-size: 1.6rem;
-  font-weight: 300;
+  font-weight: 400;
   font-style: italic;
   color: var(--color-text-primary);
   line-height: 2.6rem;
@@ -73,14 +76,14 @@ body::selection {
 
 .text-card-title {
   font-size: 2.4rem;
-  font-weight: 400;
+  font-weight: 500;
   color: var(--color-text-primary);
   line-height: 3.4rem;
 }
 
 .text-card {
   font-size: 1.4rem;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--color-text-secondary);
   line-height: 2.6rem;
 }
@@ -88,5 +91,19 @@ body::selection {
 .text-section {
   font-family: 'Poppins', sans-serif;
   font-size: 1.4rem;
-  font-weight: 300;
+  font-weight: 400;
+}
+
+.text-footer-primary {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fff;
+  line-height: 4rem;
+}
+
+.text-footer-secondary {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--color-text-footer);
+  line-height: 4rem;
 }

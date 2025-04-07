@@ -13,7 +13,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Webovio",
-  description: "",
+  description: "Webovio",
 };
 
 export default function RootLayout({

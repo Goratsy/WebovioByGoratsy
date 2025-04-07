@@ -15,13 +15,13 @@ const Header: FunctionComponent = () => {
                 <Navbar />
                 <div className="-translate-y-6 w-5/12 pl-[11.5%] flex flex-col justify-center items-start">
                     <p className="text-section text-white mb-[2.2rem]">A place where</p>
-                    <h1 className="h1 text-nowrap mb-[2.4rem]">A creative agency<br />for redemptive<br />brands</h1>
+                <h1 className="h1 text-nowrap mb-[2.4rem] text-white">A creative agency<br />for redemptive<br />brands</h1>
                     <p className="text-paragraph mb-[4.5rem]" style={{color: "white"}}>Anteelo is a leading strategic design firm that builds powerful digital solutions for startups and enterprises.</p>
                     <CustomLink id='link_header' className="text-link-hover" href="#">Get in touch</CustomLink>
                 </div>
             </div>
             <div className="absolute bottom-0 right-0 w-[88.5%] translate-y-1/2 overflow-hidden z-50 shadow-[50px_50px_100px_rgba(0,0,0,0.15)]">
-                <div className="bg-[#FBFBFB] pl-[6.5rem] pr-[6.5rem] py-[6rem] flex justify-start items-center gap-[6.6rem]">
+                <div className="bg-background-secondary pl-[6.5rem] pr-[6.5rem] py-[6rem] flex justify-start items-center gap-[6.6rem]">
                     <Image src={brand1} alt="brand1" />
                     <Image src={brand2} alt="brand2" />
                     <Image src={brand3} alt="brand3" />
