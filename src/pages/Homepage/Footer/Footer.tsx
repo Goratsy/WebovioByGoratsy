@@ -29,7 +29,7 @@ const Footer: FunctionComponent = () => {
             <div className="w-full">
                 <div className="w-full h-px bg-hr-secondary"></div>
             </div>
-            <div className="mt-[6rem] flex justify-between items-start">
+            <div className="mt-[6rem] flex justify-between items-start mb-[6rem]">
                 <div className="w-[54%] flex justify-between items-start gap-[10%]">
                     <div className="text-nowrap">
                         <p className="mb-[2.1rem] text-footer-primary">Services</p>
