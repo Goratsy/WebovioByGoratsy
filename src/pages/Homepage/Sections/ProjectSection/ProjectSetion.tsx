@@ -40,7 +40,7 @@ const ProjectSection: FunctionComponent = () => {
                         <p className="h2 text-nowrap mb-[2.4rem]">The wall new<br />Balenciaga.com</p>
                         <p className="text-paragraph mb-[9rem] w-[78%]">This article is floated online with an aim to help you find the best dvd printing solution.<br /><br />
                             Dvd printing is an important feature used by large and small DVD production houses to print information on DVDs.</p>
-                        <CustomLink id="link_project_1" href="#">See Case Study</CustomLink>
+                        <CustomLink href="#">See Case Study</CustomLink>
                     </div>
                 </div>
 
@@ -61,7 +61,7 @@ const ProjectSection: FunctionComponent = () => {
                     <div className="w-1/2 flex flex-col justify-center items-start pl-[11.5%]">
                         <p className="h2 text-nowrap mb-[2.4rem]">Is this the future of<br/>3D model?</p>
                         <p className="text-paragraph mb-[9rem] w-[78%]">While it was just a TV show, that little speech at the beginning of the original Star Trek show really did do a good job of capturing our feelings about space.<br/><br/>It is those feelings that drive our love of astronomy and our desire to learn more and more about it. </p>
-                        <CustomLink id="link_project_2" href="#">See Case Study</CustomLink>
+                        <CustomLink href="#">See Case Study</CustomLink>
                     </div>
                 </div>
 
@@ -83,7 +83,7 @@ const ProjectSection: FunctionComponent = () => {
                     <div className="w-1/2 flex flex-col justify-center items-start pl-[6.25%]">
                         <p className="h2 text-nowrap mb-[2.4rem]"> Is this the future of<br/>Online Booking</p>
                         <p className="text-paragraph mb-[9rem] w-[78%]">You should be able to find several indispensable facts about motivation in the following paragraphs.<br/><br/>If there’s at least one fact you didn’t know before, imagine the difference it might make.</p>
-                        <CustomLink id="link_project_3" href="#">See Case Study</CustomLink>
+                        <CustomLink href="#">See Case Study</CustomLink>
                     </div>
                 </div>
             </section>

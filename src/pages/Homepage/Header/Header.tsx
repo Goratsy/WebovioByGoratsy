@@ -23,8 +23,8 @@ const Header: FunctionComponent = () => {
                         className="h1 text-white w-[48%]"
                     />
                     
-                    <p className="text-paragraph mb-[4.5rem] w-5/12" style={{ color: "white" }}>Anteelo is a leading strategic design firm that builds powerful digital solutions for startups and enterprises.</p>
-                    <CustomLink id='link_header' className="text-link-hover" href="#">Get in touch</CustomLink>
+                    <p className="text-paragraph mb-[4.5rem] w-5/12 mt-[2.4rem]" style={{ color: "white" }}>Anteelo is a leading strategic design firm that builds powerful digital solutions for startups and enterprises.</p>
+                    <CustomLink className="text-link-hover" href="#">Get in touch</CustomLink>
                 </div>
             </div>
             <div className="absolute bottom-0 right-0 w-[88.5%] translate-y-1/2 overflow-hidden z-50 shadow-[50px_50px_100px_rgba(0,0,0,0.15)]">
