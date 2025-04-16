@@ -15,15 +15,23 @@ const Header: FunctionComponent = () => {
             <div className="relative flex flex-col justify-center h-full bg-header overflow-hidden">
                 <Navbar />
                 <div className="-translate-y-6 pl-[11.5%] flex flex-col justify-center items-start">
-                    <p className="text-section text-white mb-[2.2rem]">A place where</p>
-                    {/* <h1 className="h1 text-nowrap mb-[2.4rem] text-white">A creative agency<br />for redemptive<br />brands</h1> */}
-                    {/* <SplitText as="h1" className="h1 mb-[2.4rem] text-white w-[48%]" content="A creative agency for redemptive brands" /> */}
                     <SplitText
-                        texts={["A creative agency", "for redemptive", "brands"]}
-                        className="h1 text-white w-[48%]"
+                        className="text-section text-white mb-[2.2rem]"
+                        tag="p"
+                        text="A place where"
+                    />
+                    <SplitText
+                        className="h1 text-white w-[50%]"
+                        tag="h1"
+                        text="A creative agency for redemptive brands"
+                    />
+                    <SplitText
+                        className="text-paragraph mb-[4.5rem] w-5/12 mt-[2.4rem]"
+                        style={{ color: "white" }}
+                        tag="p"
+                        text="Anteelo is a leading strategic design firm that builds powerful digital solutions for startups and enterprises."
                     />
                     
-                    <p className="text-paragraph mb-[4.5rem] w-5/12 mt-[2.4rem]" style={{ color: "white" }}>Anteelo is a leading strategic design firm that builds powerful digital solutions for startups and enterprises.</p>
                     <CustomLink className="text-link-hover" href="#">Get in touch</CustomLink>
                 </div>
             </div>

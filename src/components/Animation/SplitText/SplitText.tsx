@@ -1,57 +1,84 @@
 'use client';
 
-import { motion } from 'framer-motion'
+import { motion, useInView } from 'framer-motion';
+import { JSX, useRef } from 'react';
 
-const container = {
-    hidden: { opacity: 0 },
-    visible: (i = 1) => ({
-        opacity: 1,
-        transition: { staggerChildren: 0.03, delayChildren: 0.04 * i }
-    })
-}
+type SplitTextProps = {
+    className?: string;
+    tag?: keyof JSX.IntrinsicElements;
+    text: string;
+    delay?: number;
+    style?: React.CSSProperties;
+    duration?: number;
+};
 
-const child = {
-    visible: {
-        opacity: 1,
-        y: 0,
-        transition: {
-            type: "spring",
-            damping: 12,
-            stiffness: 100
-        }
-    },
-    hidden: {
-        opacity: 0,
-        y: 20,
-        transition: {
-            type: "spring",
-            damping: 12,
-            stiffness: 100
-        }
-    }
-}
+const SplitText = ({ className, style, tag = 'p', text, duration = 1, delay = 0 }: SplitTextProps) => {
+    const ref = useRef<HTMLElement>(null);
+    const isInView = useInView(ref, {amount: 0.5, once: true});
 
-const SplitText = ({ texts, className }: { texts: string[], className: string }) => (
-    <>
-        {texts.map((text, indexP) => {
-            return (
-                <motion.div
-                    key={`${text}_p_${indexP}`}
-                    style={{ display: "flex", overflow: "hidden" }}
-                    variants={container}
-                    initial="hidden"
-                    animate="visible"
-                    className={`${className}`}
-                >
-                    {text.split("").map((char, index) => (
-                        <motion.span key={`${text}_${index}`} variants={child}>
-                            {char === " " ? "\u00A0" : char}
-                        </motion.span>
-                    ))}
-                </motion.div>
-            );
-        })}
-    </>
-)
+    const MotionTag = motion.create(tag) as React.ElementType;
+
+    const numberOfChars = text.length;
+
+    return (
+        <>
+            <MotionTag
+                ref={ref}
+
+                initial="hidden"
+                animate={isInView ? "visible" : "hidden"}
+
+                className={`${className}`}
+                style={style}
+
+                variants={{
+                    hidden: { opacity: 0 },
+                    visible: (i = 1) => ({
+                        opacity: 1,
+                        transition: { staggerChildren: duration / numberOfChars, delayChildren: 0.04 * i + delay },
+                    }),
+                }}
+            >
+                {text.split(" ").map((word, indexblock) => (
+                    <span className='inline-block' key={`${text}_block_${indexblock}`}>
+                        {word.split("").map((char, index) => (
+                            <motion.span
+                                key={`${text}_${index}`}
+
+                                className='inline-block'
+
+                                variants={{
+                                    visible: {
+                                        opacity: 1,
+                                        y: 0,
+                                        transition: {
+                                            type: "spring",
+                                            damping: 12,
+                                            stiffness: 150
+                                        }
+                                    },
+                                    hidden: {
+                                        opacity: 0,
+                                        y: ref.current ? ref.current.offsetHeight * 0.1 : 0,
+                                        transition: {
+                                            type: "spring",
+                                            damping: 12,
+                                            stiffness: 100
+                                        }
+                                    }
+                                }}
+                            >
+                                {char}
+                            </motion.span>
+                        ))}
+                    {`\u00A0`}
+                    </span>
+                ))}
+
+
+            </MotionTag>
+        </>
+    );
+};
 
 export default SplitText;

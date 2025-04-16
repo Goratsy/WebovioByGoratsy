@@ -22,7 +22,7 @@ const DeationSection: FunctionComponent = () => {
                 <div className="relative px-[11.5%] grid grid-cols-4 grid-rows-1 justify-between items-center gap-[2.7%]">
                     {cards.map((card, index) => {
                         return (
-                            <div key={index} className="relative rounded-xl h-[31rem] p-[3rem] shadow-[0px_0px_0px_rgba(0,0,0,0.3)] duration-300 ease-in-out hover:-translate-2 hover:shadow-[10px_15px_50px_rgba(0,0,0,0.15)]">
+                            <div key={index} className="relative rounded-xl h-[31rem] p-[3rem] shadow-[0px_0px_0px_rgba(0,0,0,0.3)] duration-300 ease-in-out hover:shadow-[10px_15px_50px_rgba(0,0,0,0.15)]">
                                 <p dangerouslySetInnerHTML={{ __html: card.title }} className="text-card-title mb-[2rem]"></p>
                                 <p className="text-card">{card.text}</p>
                                 <div className="absolute bottom-[3rem] left-[3rem]">
