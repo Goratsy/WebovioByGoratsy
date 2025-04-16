@@ -14,7 +14,7 @@ const Footer: FunctionComponent = () => {
         <footer className={`relative px-[11.5%] pt-[31rem] pb-[3rem] mt-[32rem] bg-background-primary ${style.bg_footer}`}>
             <div className="w-[88.5%] pl-[11.5%] py-[7rem] absolute top-0 left-0 bg-background-secondary z-50 -translate-y-1/2 shadow-[50px_130px_100px_rgba(0,0,0,0.15)]">
                 <p className="h1 mb-[5rem] text-text-primary">Let’s make something<br />amazing together.</p>
-                <CustomLink id="CL_footer">LET'S GET STARTED</CustomLink>
+                <CustomLink>LET'S GET STARTED</CustomLink>
             </div>
             <div className="text-nowrap mb-[5.2rem]">
                 <div className="inline-block w-[18rem] mr-[7rem]">
