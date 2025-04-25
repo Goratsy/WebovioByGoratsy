@@ -10,11 +10,11 @@ type SplitTextProps = {
     delay?: number;
     style?: React.CSSProperties;
     duration?: number;
+    isInView: boolean;
 };
 
-const SplitText = ({ className, style, tag = 'p', text, duration = 1, delay = 0 }: SplitTextProps) => {
+const SplitText = ({ className, style, tag = 'p', text, duration = 1, delay = 0, isInView }: SplitTextProps) => {
     const ref = useRef<HTMLElement>(null);
-    const isInView = useInView(ref, {amount: 0.5, once: true});
 
     const MotionTag = motion.create(tag) as React.ElementType;
 
@@ -44,7 +44,6 @@ const SplitText = ({ className, style, tag = 'p', text, duration = 1, delay = 0 
                         {word.split("").map((char, index) => (
                             <motion.span
                                 key={`${text}_${index}`}
-
                                 className='inline-block'
 
                                 variants={{
@@ -71,7 +70,7 @@ const SplitText = ({ className, style, tag = 'p', text, duration = 1, delay = 0 
                                 {char}
                             </motion.span>
                         ))}
-                    {`\u00A0`}
+                    {indexblock === text.split(" ").length - 1 ? null : `\u00A0`}
                     </span>
                 ))}
 

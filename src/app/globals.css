@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "tailwindcss-animated";
 
 @theme {
   --color-link: #D4D6D4;
@@ -25,6 +26,7 @@
 html {
   font-size: 62.5%;
   font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
 }
 
 body::selection {

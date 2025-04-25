@@ -1,5 +1,9 @@
+'use client';
+
+import SplitText from "@/components/Animation/SplitText/SplitText";
 import CustomLink from "@/components/UI/CustomLink/CustomLink";
-import { FunctionComponent } from "react";
+import { useInView } from "framer-motion";
+import { FunctionComponent, useRef } from "react";
 
 const DeationSection: FunctionComponent = () => {
     const cards: { title: string, text: string, link: string }[] = [
@@ -9,20 +13,26 @@ const DeationSection: FunctionComponent = () => {
         { title: "Code<br/>Review", text: 'Do you know what one of the key secrets of success is what makes people successful in business', link: '#' },
     ];
 
+    const ref = useRef<HTMLElement>(null);
+    const isInView = useInView(ref, { amount: 0.5, once: true });
+
     return (
         <>
             <div className="w-full px-[11.5%]">
                 <div className="w-full h-px bg-hr mx-auto"></div>
             </div>
 
-            <section className="pt-[15rem]">
+            <section ref={ref} className="pt-[15rem]">
                 <div className="pl-[11.5%] mb-[10.4rem]">
-                    <h2 className="h2">Deation & Evaluation - Best Way<br />to Kick off Your Product Idea</h2>
+                    <SplitText isInView={isInView} duration={0.5} delay={0} text='Deation & Evaluation - Best Way' className="h2" />
+                    <SplitText isInView={isInView} duration={0.5} delay={0.5} text='to Kick off Your Product Idea' className="h2" />
                 </div>
-                <div className="relative px-[11.5%] grid grid-cols-4 grid-rows-1 justify-between items-center gap-[2.7%]">
+                <div className="relative px-[11.5%] grid grid-cols-4 grid-rows-1 justify-between items-center gap-[2.7%] ">
                     {cards.map((card, index) => {
+                        const animationDelay = String(`animate-delay-[${(index) * 100}ms]`)
+
                         return (
-                            <div key={index} className="relative rounded-xl h-[31rem] p-[3rem] shadow-[0px_0px_0px_rgba(0,0,0,0.3)] duration-300 ease-in-out hover:shadow-[10px_15px_50px_rgba(0,0,0,0.15)]">
+                            <div key={index} className={`relative rounded-xl h-[31rem] p-[3rem] duration-500 ${animationDelay} ${isInView ? `opacity-100  animate-fade-up` : 'opacity-0'}`}>
                                 <p dangerouslySetInnerHTML={{ __html: card.title }} className="text-card-title mb-[2rem]"></p>
                                 <p className="text-card">{card.text}</p>
                                 <div className="absolute bottom-[3rem] left-[3rem]">

@@ -1,19 +1,31 @@
+'use client';
+
 import CustomLink from "@/components/UI/CustomLink/CustomLink";
-import { FunctionComponent } from "react";
+import { FunctionComponent, useRef } from "react";
 import style from './ServicesSection.module.css'
 import Image from "next/image";
 import manImage from '../../../../../public/homepage/deation/Oval.png';
 import { CardBody, CardContainer, CardItem } from "@/components/Effects/Card3dEffect/Card3dEffect";
+import SplitText from "@/components/Animation/SplitText/SplitText";
+import { useInView } from "framer-motion";
 
 const ServicesSection: FunctionComponent = () => {
+    const ref = useRef<HTMLElement>(null);
+    const isInView = useInView(ref, {amount: 0.5, once: true});
+
     return (
         <>
-            <section className="px-[11.5%] flex flex-row justify-between items-end mb-[15rem]">
+            <section ref={ref} className="px-[11.5%] flex flex-row justify-between items-end mb-[15rem]">
                 <div className="inline-flex w-[57.3%] mb-[3.4rem] flex-col justify-center items-start pr-[14.4%]">
-                    <p className="text-section">What we do for you</p>
-                    <h2 className="h2 text-nowrap my-[3.2rem]">Strategy. Design<br />Content. <span className={`${style.bg_text_h2}`}>Technology</span><br />Development </h2>
-                    <p className="text-paragraph mb-[4.2rem]">There’s no secret sauce, no wizard behind the curtain. What makes Aerolab tick is an interdisciplinary team with a framework that fosters candid collaboration.</p>
-                    <CustomLink id="link_deation_section" href="#">More know About us</CustomLink>
+                    <SplitText isInView={isInView} text="What we do for you" className="text-section" />
+                    <h2 className="h2 my-[3.2rem]">
+                        <SplitText isInView={isInView} text="Strategy. Design" tag="span" className="block" duration={0.25} delay={0}/>
+                        <SplitText isInView={isInView} text="Content. " tag="span" duration={0.25} delay={0.25}/>
+                        <SplitText isInView={isInView} text="Technology" tag="span" className={`${style.bg_text_h2}`} duration={0.25} delay={0.5}/>
+                        <SplitText isInView={isInView} text="Development" tag="span" duration={0.25} delay={0.75}/>
+                    </h2>
+                    <SplitText isInView={isInView} delay={1} text="There’s no secret sauce, no wizard behind the curtain. What makes Aerolab tick is an interdisciplinary team with a framework that fosters candid collaboration." className="text-paragraph mb-[4.2rem]" />
+                    <CustomLink isInView={isInView} delay={1.25} id="link_deation_section" href="#">More know About us</CustomLink>
                 </div>
                 <CardContainer containerClassName="w-[42.7%]" className="inline-flex flex-col justify-end relative bg-white shadow-[0px_100px_100px_rgba(0,0,0,0.15)] pb-[6rem] px-[4rem] h-[64.4rem]">
                     <CardBody>
