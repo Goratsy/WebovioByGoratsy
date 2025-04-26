@@ -8,6 +8,8 @@ import brand3 from '../../../../public/homepage/header/brand3.png';
 import brand4 from '../../../../public/homepage/header/brand4.png';
 import brand5 from '../../../../public/homepage/header/brand5.png';
 import SplitText from "@/components/Animation/SplitText/SplitText";
+import Partnerships from "./Components/Partnerships";
+
 
 const Header: FunctionComponent = () => {
     return (
@@ -41,15 +43,7 @@ const Header: FunctionComponent = () => {
                     <CustomLink delay={1} className="text-link-hover" href="#">Get in touch</CustomLink>
                 </div>
             </div>
-            <div className="absolute bottom-0 right-0 w-[88.5%] translate-y-1/2 overflow-hidden z-50 shadow-[50px_50px_100px_rgba(0,0,0,0.15)]">
-                <div className="bg-background-secondary pl-[6.5rem] pr-[6.5rem] py-[6rem] flex justify-start items-center gap-[6.6rem]">
-                    <Image src={brand1} alt="brand1" />
-                    <Image src={brand2} alt="brand2" />
-                    <Image src={brand3} alt="brand3" />
-                    <Image src={brand4} alt="brand4" />
-                    <Image src={brand5} alt="brand5" />
-                </div>
-            </div>
+            <Partnerships />
         </header>
     );
 }
