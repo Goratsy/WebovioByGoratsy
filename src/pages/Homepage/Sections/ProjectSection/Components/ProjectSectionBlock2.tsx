@@ -32,14 +32,15 @@ const ProjectSectionBlock2: FunctionComponent = () => {
                     </CardBody>
                 </CardContainer>
             </div>
-            <div className="w-1/2 flex flex-col justify-center items-start pl-[11.5%]">
-            <div className="mb-[2.4rem]">
-                <SplitText isInView={isInViewBlock2} text="Is this the future of 3D model?" className="h2 text-nowrap" />
-            </div>
-            <div className="mb-[9rem]">
-                <SplitText isInView={isInViewBlock2} duration={0.5} delay={1}  text="While it was just a TV show, that little speech at the beginning of the original Star Trek show really did do a good job of capturing our feelings about space." className="text-paragraph w-[78%] mb-5" />
-                <SplitText isInView={isInViewBlock2} duration={0.5} delay={1.5}  text="It is those feelings that drive our love of astronomy and our desire to learn more and more about it. " className="text-paragraph w-[78%]" />
-            </div>
+            <div className="w-1/2 flex flex-col justify-center items-start pl-[11.5%] max-tablet:pl-[5%]">
+                <div className="mb-[2.4rem]">
+                    <SplitText isInView={isInViewBlock2} duration={0.5} delay={0} text="Is this the future" className="h2" />
+                    <SplitText isInView={isInViewBlock2} duration={0.5} delay={0.5} text="of 3D model?" className="h2" />
+                </div>
+                <div className="mb-[9rem]">
+                    <SplitText isInView={isInViewBlock2} duration={0.5} delay={1} text="While it was just a TV show, that little speech at the beginning of the original Star Trek show really did do a good job of capturing our feelings about space." className="text-paragraph w-[78%] mb-5" />
+                    <SplitText isInView={isInViewBlock2} duration={0.5} delay={1.5} text="It is those feelings that drive our love of astronomy and our desire to learn more and more about it. " className="text-paragraph w-[78%]" />
+                </div>
                 <CustomLink isInView={isInViewBlock2} delay={2} href="#">See Case Study</CustomLink>
             </div>
         </div>

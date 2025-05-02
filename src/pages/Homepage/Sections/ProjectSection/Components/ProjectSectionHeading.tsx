@@ -11,7 +11,7 @@ const ProjectSectionHeading: FunctionComponent = () => {
 
     return (
 
-        <div ref={refHeading} className="pl-[11.5%] mb-[10.4rem] flex flex-row justify-start items-center gap-[10.6%]">
+        <div ref={refHeading} className="pl-[11.5%] max-tablet:pl-[5%] mb-[10.4rem] flex flex-row justify-start items-center gap-[10.6%]">
             <h2 className="h2">
                 <SplitText isInView={isInViewHeading} tag='span' text="We Have Some" className="block" duration={0.5} delay={0} />
                 <SplitText isInView={isInViewHeading} tag='span' text="Awesomr Project." className="block" duration={0.5} delay={0.5} />

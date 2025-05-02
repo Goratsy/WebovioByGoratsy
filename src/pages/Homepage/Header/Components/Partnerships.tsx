@@ -18,16 +18,25 @@ const Partnerships: FunctionComponent = () => {
             style={{ transformOrigin: "right" }}
             transition={{
                 duration: 0.8,
-                // duration: 10,
                 ease: [0.83, 0, 0.17, 1],
             }}
         >
-            <div className="w-full h-full overflow-x-hidden bg-background-secondary pl-[6.5rem] py-[6rem] flex justify-start items-center gap-[6.6rem]">
-                <motion.div initial={{opacity: 0}} animate={{opacity:1}} transition={{delay: 0.8}}><Image src={brand1} alt="brand1" className="h-[11.4rem] w-[15.6rem]" /></motion.div>
-                <motion.div initial={{opacity: 0}} animate={{opacity:1}} transition={{delay: 0.9}}><Image src={brand2} alt="brand2" className="h-[11.4rem] w-[15.6rem]" /></motion.div>
-                <motion.div initial={{opacity: 0}} animate={{opacity:1}} transition={{delay: 1}}><Image src={brand3} alt="brand3" className="h-[11.4rem] w-[15.6rem]" /></motion.div>
-                <motion.div initial={{opacity: 0}} animate={{opacity:1}} transition={{delay: 1.1}}><Image src={brand4} alt="brand4" className="h-[11.4rem] w-[15.6rem]" /></motion.div>
-                <motion.div initial={{opacity: 0}} animate={{opacity:1}} transition={{delay: 1.2}}><Image src={brand5} alt="brand5" className="h-[11.4rem] w-[15.6rem]" /></motion.div>
+            <div className="w-full h-full overflow-x-hidden max-tablet:overflow-x-scroll bg-background-secondary pl-[6.5rem] py-[6rem] flex justify-start items-center gap-[6.6rem]">
+                {[brand1, brand2, brand3, brand4, brand5].map((brand, index) => (
+                    <motion.div
+                        key={`brand-${index}`}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ delay: 0.8 + index * 0.1 }}
+                        className="flex-shrink-0 h-[11.4rem] w-[15.6rem]"
+                    >
+                        <Image
+                            src={brand}
+                            alt={`brand${index + 1}`}
+                            className="h-full w-full object-contain"
+                        />
+                    </motion.div>
+                ))}
             </div>
         </motion.div>
     );

@@ -8,7 +8,7 @@ import HR from "@/components/UI/HR/HR";
 
 const InformationAndLinks: FunctionComponent = () => {
     const ref = useRef<HTMLDivElement>(null);
-    const isInView = useInView(ref, { amount: 0.3, once: true });
+    const isInView = useInView(ref, { amount: 0.7, once: true });
 
     return (
         <>

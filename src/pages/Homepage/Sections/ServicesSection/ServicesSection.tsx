@@ -15,7 +15,7 @@ const ServicesSection: FunctionComponent = () => {
 
     return (
         <>
-            <section ref={ref} className="px-[11.5%] flex flex-row justify-between items-end mb-[15rem]">
+            <section ref={ref} className="px-[11.5%] max-tablet:px-[5%] flex flex-row justify-between items-end mb-[15rem]">
                 <div className="inline-flex w-[57.3%] mb-[3.4rem] flex-col justify-center items-start pr-[14.4%]">
                     <SplitText isInView={isInView} text="What we do for you" className="text-section" />
                     <h2 className="h2 my-[3.2rem]">

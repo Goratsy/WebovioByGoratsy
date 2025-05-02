@@ -9,7 +9,7 @@ import HR from "@/components/UI/HR/HR";
 const ProjectSection: FunctionComponent = () => {
     return (
         <>
-           <HR className="px-[11.5%]"/>
+           <HR className="px-[11.5%] max-tablet:px-[5%]"/>
 
             <section className="pt-[15rem] pb-[19rem]">
                 <ProjectSectionHeading />

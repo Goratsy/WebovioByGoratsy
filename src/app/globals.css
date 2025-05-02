@@ -21,6 +21,8 @@
   --color-background-secondary: #FBFBFB;
 
   --ease-out-cubic: cubic-bezier(0.33, 1, 0.68, 1);
+
+  --breakpoint-tablet: 1050px;
 }
 
 html {
@@ -108,4 +110,26 @@ body::selection {
   font-weight: 400;
   color: var(--color-text-footer);
   line-height: 4rem;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+
+@media (max-width: 1350px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+
+@media (max-width: 1050px) {
+  html {
+    font-size: 48%;
+  }
 }

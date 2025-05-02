@@ -9,27 +9,29 @@ interface MagneticEffectProps {
     style?: React.CSSProperties;
 }
 
-const MagneticEffect: FunctionComponent<MagneticEffectProps> = ({children, className, style}) => {
+const MagneticEffect: FunctionComponent<MagneticEffectProps> = ({ children, className, style }) => {
     const ref = useRef<HTMLDivElement>(null);
-    const [position, setPosition] = useState<{x: number, y: number}>({x:0,y:0});
+    const [position, setPosition] = useState<{ x: number, y: number }>({ x: 0, y: 0 });
 
     const handleMouse = (e: React.MouseEvent<HTMLDivElement>) => {
-
-        const { clientX, clientY } = e;
-
-        if (ref.current) {
-            const {height, width, left, top} = ref.current.getBoundingClientRect();
+        const viewportWidth = window.innerWidth;
     
-            const middleX = clientX - (left + width / 2);
-            const middleY = clientY - (top + height / 2);
+        if (viewportWidth >= 1100) {
+            const { clientX, clientY } = e;
     
-            setPosition({x: middleX, y: middleY});
-        }
-
+            if (ref.current) {
+                const { height, width, left, top } = ref.current.getBoundingClientRect();
+    
+                const middleX = clientX - (left + width / 2);
+                const middleY = clientY - (top + height / 2);
+    
+                setPosition({ x: middleX, y: middleY });
+            }
+        } 
     }
 
     const reset = () => {
-        setPosition({x:0, y:0})
+        setPosition({ x: 0, y: 0 })
     }
 
     const { x, y } = position;
@@ -37,12 +39,12 @@ const MagneticEffect: FunctionComponent<MagneticEffectProps> = ({children, class
     return (
 
         <motion.div
-            style={{position: "relative", ...style}}
+            style={{ position: "relative", ...style }}
             ref={ref}
             onMouseMove={handleMouse}
             onMouseLeave={reset}
-            animate={{x, y}}
-            transition={{type: "spring", stiffness: 150, damping: 15, mass: 0.1}}
+            animate={{ x, y }}
+            transition={{ type: "spring", stiffness: 150, damping: 15, mass: 0.1 }}
             className={className}
         >
 
@@ -52,5 +54,5 @@ const MagneticEffect: FunctionComponent<MagneticEffectProps> = ({children, class
 
     )
 }
- 
+
 export default MagneticEffect;

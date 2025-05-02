@@ -19,14 +19,14 @@ const DeationSection: FunctionComponent = () => {
 
     return (
         <>
-            <HR className="px-[11.5%]" />
+            <HR className="px-[11.5%] max-tablet:px-[5%]" />
 
             <section ref={ref} className="pt-[15rem]">
-                <div className="pl-[11.5%] mb-[10.4rem]">
+                <div className="pl-[11.5%] max-tablet:pl-[5%] mb-[10.4rem]">
                     <SplitText isInView={isInView} duration={0.5} delay={0} text='Deation & Evaluation - Best Way' className="h2" />
                     <SplitText isInView={isInView} duration={0.5} delay={0.5} text='to Kick off Your Product Idea' className="h2" />
                 </div>
-                <div className="relative px-[11.5%] grid grid-cols-4 grid-rows-1 justify-between items-center gap-[2.7%] ">
+                <div className="relative px-[11.5%] max-tablet:px-[5%] grid grid-cols-4 grid-rows-1 justify-between items-center gap-[2.7%] ">
                     {cards.map((card, index) => {
                         const animationDelay = String(`animate-delay-[${(index + 1) * 100}ms]`)
 

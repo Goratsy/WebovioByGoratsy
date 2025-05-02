@@ -7,7 +7,7 @@ const Navbar: FC = () => {
 
 
     return ( 
-        <div className="absolute top-0 left-0 flex justify-between items-center w-full px-[11.5%] mt-[30px]">
+        <div className="absolute top-0 left-0 flex justify-between items-center w-full px-[11.5%] max-tablet:px-[5%] mt-[30px]">
             <div className="flex justify-center items-center gap-[11px] ">
                 <Logo />
                 <NameCompony className='-translate-y-2'/>
