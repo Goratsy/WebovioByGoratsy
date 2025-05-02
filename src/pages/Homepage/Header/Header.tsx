@@ -1,12 +1,6 @@
 import { FunctionComponent } from "react";
 import Navbar from "../Navbar/Navbar";
 import CustomLink from "@/components/UI/CustomLink/CustomLink";
-import Image from "next/image";
-import brand1 from '../../../../public/homepage/header/brand1.png';
-import brand2 from '../../../../public/homepage/header/brand2.png';
-import brand3 from '../../../../public/homepage/header/brand3.png';
-import brand4 from '../../../../public/homepage/header/brand4.png';
-import brand5 from '../../../../public/homepage/header/brand5.png';
 import SplitText from "@/components/Animation/SplitText/SplitText";
 import Partnerships from "./Components/Partnerships";
 
@@ -40,7 +34,7 @@ const Header: FunctionComponent = () => {
                         text="Anteelo is a leading strategic design firm that builds powerful digital solutions for startups and enterprises."
                     />
 
-                    <CustomLink delay={1} className="text-link-hover" href="#">Get in touch</CustomLink>
+                    <CustomLink isInView delay={1} className="text-link-hover" href="#">Get in touch</CustomLink>
                 </div>
             </div>
             <Partnerships />

@@ -3,11 +3,7 @@
 import { FunctionComponent, useState } from "react";
 import style from './BurgerMenu.module.css'
 
-interface BurgerMenuProps {
-
-}
-
-const BurgerMenu: FunctionComponent<BurgerMenuProps> = () => {
+const BurgerMenu: FunctionComponent = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (

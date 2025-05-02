@@ -15,7 +15,7 @@ const HeadingWithLink: FunctionComponent = () => {
                 <SplitText isInView={isInView} duration={0.5} delay={0} text="Let’s make something" className="h1 text-text-primary" />
                 <SplitText isInView={isInView} duration={0.5} delay={0.5} text="amazing together." className="h1 text-text-primary" />
             </div>
-            <CustomLink isInView={isInView}>LET'S GET STARTED</CustomLink>
+            <CustomLink isInView={isInView}>LET&apos;S GET STARTED</CustomLink>
         </div>
     );
 }

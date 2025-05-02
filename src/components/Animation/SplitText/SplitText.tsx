@@ -1,6 +1,6 @@
 'use client';
 
-import { motion, useInView } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { JSX, useRef } from 'react';
 
 type SplitTextProps = {
@@ -10,7 +10,7 @@ type SplitTextProps = {
     delay?: number;
     style?: React.CSSProperties;
     duration?: number;
-    isInView: boolean;
+    isInView?: boolean;
 };
 
 const SplitText = ({ className, style, tag = 'p', text, duration = 1, delay = 0, isInView }: SplitTextProps) => {

@@ -21,7 +21,7 @@ const ProjectSectionBlock1: FunctionComponent = () => {
                 <CardContainer containerClassName="absolute translate-x-[4rem] translate-y-[6.5rem] bottom-0 right-0">
                     <CardBody>
                         <div className="w-[45.3rem] rounded-xl bg-white shadow-[50px_50px_100px_rgba(0,0,0,0.15)] py-[3rem] px-[3rem] z-50">
-                            <CardItem translateZ={40}><p className="text-quote mb-[2.5rem]">“In my history of working with trade show vendors, I can honestly say that there is not one company that I've ever worked with that has better service than Exhibit Systems.”</p></CardItem>
+                            <CardItem translateZ={40}><p className="text-quote mb-[2.5rem]">“In my history of working with trade show vendors, I can honestly say that there is not one company that I&apos;ve ever worked with that has better service than Exhibit Systems.”</p></CardItem>
                             <CardItem translateZ={30} className="flex justify-start items-center gap-[1.4rem]">
                                 <Image src={oval0} alt="image-quote" width={46} height={46} className="shadow-[20px_25px_43px_rgba(0,0,0,0.15)] rounded-full" />
                                 <div>

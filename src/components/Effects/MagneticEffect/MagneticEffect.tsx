@@ -6,14 +6,14 @@ import { FunctionComponent, ReactNode, useRef, useState } from "react";
 interface MagneticEffectProps {
     children: ReactNode;
     className?: string;
-    style?: Object;
+    style?: React.CSSProperties;
 }
 
 const MagneticEffect: FunctionComponent<MagneticEffectProps> = ({children, className, style}) => {
     const ref = useRef<HTMLDivElement>(null);
     const [position, setPosition] = useState<{x: number, y: number}>({x:0,y:0});
 
-    const handleMouse = (e: any) => {
+    const handleMouse = (e: React.MouseEvent<HTMLDivElement>) => {
 
         const { clientX, clientY } = e;
 

@@ -1,10 +1,6 @@
 import { FunctionComponent } from "react";
 
-interface LogoProps {
-
-}
-
-const Logo: FunctionComponent<LogoProps> = () => {
+const Logo: FunctionComponent = () => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
