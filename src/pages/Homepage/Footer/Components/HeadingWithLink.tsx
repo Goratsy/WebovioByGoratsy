@@ -2,7 +2,7 @@
 
 import CustomLink from "@/components/UI/CustomLink/CustomLink";
 import { FunctionComponent, useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import { useInView } from "framer-motion";
 import SplitText from "@/components/Animation/SplitText/SplitText";
 
 const HeadingWithLink: FunctionComponent = () => {
