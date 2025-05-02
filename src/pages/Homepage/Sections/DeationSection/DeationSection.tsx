@@ -2,6 +2,7 @@
 
 import SplitText from "@/components/Animation/SplitText/SplitText";
 import CustomLink from "@/components/UI/CustomLink/CustomLink";
+import HR from "@/components/UI/HR/HR";
 import { useInView } from "framer-motion";
 import { FunctionComponent, useRef } from "react";
 
@@ -18,9 +19,7 @@ const DeationSection: FunctionComponent = () => {
 
     return (
         <>
-            <div className="w-full px-[11.5%]">
-                <div className="w-full h-px bg-hr mx-auto"></div>
-            </div>
+            <HR className="px-[11.5%]" />
 
             <section ref={ref} className="pt-[15rem]">
                 <div className="pl-[11.5%] mb-[10.4rem]">
@@ -29,7 +28,7 @@ const DeationSection: FunctionComponent = () => {
                 </div>
                 <div className="relative px-[11.5%] grid grid-cols-4 grid-rows-1 justify-between items-center gap-[2.7%] ">
                     {cards.map((card, index) => {
-                        const animationDelay = String(`animate-delay-[${(index) * 100}ms]`)
+                        const animationDelay = String(`animate-delay-[${(index + 1) * 100}ms]`)
 
                         return (
                             <div key={index} className={`relative rounded-xl h-[31rem] p-[3rem] duration-500 ${animationDelay} ${isInView ? `opacity-100  animate-fade-up` : 'opacity-0'}`}>

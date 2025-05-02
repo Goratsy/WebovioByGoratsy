@@ -4,6 +4,7 @@ import { FunctionComponent, useRef } from "react";
 import Logo from "@/SVGcomponents/Homepage/Logo/Logo";
 import NameCompony from "@/SVGcomponents/Homepage/Logo/NameCompany";
 import { useInView } from "framer-motion";
+import HR from "@/components/UI/HR/HR";
 
 const InformationAndLinks: FunctionComponent = () => {
     const ref = useRef<HTMLDivElement>(null);
@@ -21,9 +22,7 @@ const InformationAndLinks: FunctionComponent = () => {
                     <p className="text-footer-primary">491 Merlin Crest Suite 963</p>
                 </div>
             </div>
-            <div className="w-full">
-                <div className="w-full h-px bg-hr-secondary"></div>
-            </div>
+            <HR bgColor="bg-hr-secondary"/>
             <div className={`mt-[6rem] flex justify-between items-start mb-[6rem] ${isInView ? 'animate-fade-up' : 'opacity-0'}  duration-500 ease-in-out animate-delay-[200ms]`}>
                 <div className="w-[54%] flex justify-between items-start gap-[10%]">
                     <div className="text-nowrap">
@@ -94,9 +93,7 @@ const InformationAndLinks: FunctionComponent = () => {
                     </div>
                 </div>
             </div>
-            <div className="w-full">
-                <div className="w-full h-px bg-hr-secondary"></div>
-            </div>
+            <HR bgColor="bg-hr-secondary"/>
             <div className={`mt-[2.4rem] flex justify-between items-center ${isInView ? 'animate-fade-up' : 'opacity-0'} duration-500 ease-in-out animate-delay-[400ms]`}>
                 <div className="flex justify-center items-center gap-[11px] ">
                     <Logo />

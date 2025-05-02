@@ -26,7 +26,7 @@ const Header: FunctionComponent = () => {
                     />
                     <SplitText
                         isInView
-                        className="h1 text-white w-[50%]"
+                        className="h1 text-white w-[45%]"
                         tag="h1"
                         delay={0.4}
                         text="A creative agency for redemptive brands"

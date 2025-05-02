@@ -11,7 +11,7 @@ import { useInView } from "framer-motion";
 
 const ProjectSectionBlock3: FunctionComponent = () => {
     const refBlock3 = useRef<HTMLDivElement>(null);
-    const isInViewBlock3 = useInView(refBlock3, { amount: 0.5, once: true });
+    const isInViewBlock3 = useInView(refBlock3, { amount: 0.7, once: true });
 
     return (
         <div ref={refBlock3} className="flex justify-left items-center">
