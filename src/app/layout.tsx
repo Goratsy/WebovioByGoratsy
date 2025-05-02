@@ -7,9 +7,10 @@ import Footer from "@/pages/Homepage/Footer/Footer";
 
 const poppins = Poppins({
   weight: ['400', '500', '600', '700'],
-  style: ['normal', 'italic']
+  style: ['normal', 'italic'],
+  subsets: ['latin'],
+  display: 'swap',
 });
-
 
 export const metadata: Metadata = {
   title: "Webovio",
